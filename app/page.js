@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* <h1>Home page Root</h1>
       <p> paths "/"</p> */}
-      <h1>Helloooo!!!! Guys</h1>
+      <h1>Helloooo!!!! Guyssss</h1>
     </main>
     </>
   )
