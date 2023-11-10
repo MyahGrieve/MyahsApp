@@ -1,16 +1,17 @@
 import Image from 'next/image'
+import * as React from "react";
+
+// 1. import `NextUIProvider` component
 //import { PageHeader } from './components/header/PageHeader'
+// import {Heading} from "@/components/tailwind-helpers/tw-merge/Heading"
+// import { Button } from '@/components/tailwind-helpers/cva/Button'
 
 //LANDING PAGE, first page that shows up
 export default function Home() {
   return (
-    <>
-   {/* // <PageHeader/> */}
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {/* <h1>Home page Root</h1>
-      <p> paths "/"</p> */}
-      <h1>Helloooo!!!! Guyssss</h1>
+      {/* <Heading as="h1" className="text-red-500" >My Project Heading</Heading>
+      <Button intent="orange" size="large">Call to Action</Button> */}
     </main>
-    </>
   )
 }
