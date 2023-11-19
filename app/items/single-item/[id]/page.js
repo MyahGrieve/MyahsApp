@@ -3,7 +3,7 @@ import { Image } from "@nextui-org/react";
 import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/react";
 import { Button, Tooltip } from "@nextui-org/react";
 import {FaLeaf} from "react-icons/fa"
-// import { useState } from "react";
+import { useState } from "react";
 
 async function getSingleItem(id) {
     const payload = await getArt();
@@ -16,6 +16,8 @@ async function ArtPage ({params}) {
     
     const id = params.id
     const item = await getSingleItem(id)
+
+    const[dataFetched, setDataFetched] = useState(false)
     
     return (
 <div className="m-4 flex justify-center">
@@ -35,7 +37,7 @@ async function ArtPage ({params}) {
                       <div className="text-tiny">This artwork is created using sustainable materials and uses carbon-neutral shipping</div>
                     </div>
                   }>
-                <Button size="sm" className="bg-lime-200 border-green-700 mr-3">
+                <Button onClick={setDataFetched(true)} size="sm" className="bg-lime-200 border-green-700 mr-3">
                 eco-choice
                 <FaLeaf fill="#77bf78"></FaLeaf>
             </Button>
