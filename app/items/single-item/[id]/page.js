@@ -1,9 +1,6 @@
 import { getArt } from "@/lib/firebase/getArt";
-import { Image } from "@nextui-org/react";
-import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/react";
 import { Button, Tooltip } from "@nextui-org/react";
 import {FaLeaf} from "react-icons/fa"
-import { useState } from "react";
 
 async function getSingleItem(id) {
     const payload = await getArt();
