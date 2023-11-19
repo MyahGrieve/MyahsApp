@@ -17,13 +17,11 @@ async function ArtPage ({params}) {
     const id = params.id
     const item = await getSingleItem(id)
 
-    const[dataFetched, setDataFetched] = useState(false)
+
     
     return (
 <div className="m-4 flex justify-center">
-    {/* <header className="text-center pt-28"> */}
-
-    {/* </header> */}
+ 
     <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-5xl  dark:border-gray-700 dark:bg-gray-800">
         <img class="p-5   h-96 md:h-auto md:w-1/2 " src={item.image} alt=""></img>
 
@@ -57,7 +55,6 @@ async function ArtPage ({params}) {
         ) : (
             <button className="disabled:opacity-50 cursor-not-allowed bg-gray-300 text-gray-600 rounded-full px-6 py-2">Sold Out!</button>
         )}
-            {/* <Button radius="full" className="tracking-light bg-black text-white ">Add to Cart</Button> */}
         </div>
     </div>
 </div>
