@@ -32,7 +32,7 @@ async function ArtPage ({params}) {
                       <div className="text-tiny">This artwork is created using sustainable materials and uses carbon-neutral shipping</div>
                     </div>
                   }>
-                <Button onClick={setDataFetched(true)} size="sm" className="bg-lime-200 border-green-700 mr-3">
+                <Button size="sm" className="bg-lime-200 border-green-700 mr-3">
                 eco-choice
                 <FaLeaf fill="#77bf78"></FaLeaf>
             </Button>
