@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import * as React from "react";
 import { Button } from '@nextui-org/react';
 import { PageHeader } from '@/components/header/PageHeader';
