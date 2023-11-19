@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import {getArt} from '@/lib/firebase/getArt.js'
 import Image from 'next/image';
 import { ArtCard } from '@/components/ui/ArtCard';
+import { PageHeader } from '@/components/header/PageHeader';
 
 
 
@@ -18,13 +19,11 @@ async function EmployeesPage () {
         <>
         {/* <PageHeader title="All Employees Display"/> */}
         <main className='m-10'>
-        <div className="gap-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {/* <div > */}
-             {/* <Link className=" gap-10 grid grid-cols-2 sm:grid-cols-4"href="/item[id]"> */}
+            <PageHeader title="Browse the Collection" />
+        <div className="gap-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-10">
                 {
                 values.map(item=> <ArtCard key={item.uid} {...item}/>)
             }
-             {/* </Link> */}
             </div>
            
         </main>
