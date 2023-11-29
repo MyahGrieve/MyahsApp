@@ -8,9 +8,9 @@ import { PageHeader } from '@/components/header/PageHeader';
 
 
 
+
 async function EmployeesPage () {
     const payload = await getArt()
-    console.log(payload)
     const values = Object.values(payload)
    
 

@@ -1,6 +1,7 @@
 import { getArt } from "@/lib/firebase/getArt";
 import { Button, Tooltip } from "@nextui-org/react";
 import {FaLeaf} from "react-icons/fa"
+import { Footer } from "@/components/footer/Footer";
 
 async function getSingleItem(id) {
     const payload = await getArt();
@@ -17,7 +18,8 @@ async function ArtPage ({params}) {
 
     
     return (
-<div className="m-4 flex justify-center">
+        
+<div className="m-4 flex flex-col justify-center items-center my-10 md:my-20">
  
     <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-5xl  dark:border-gray-700 dark:bg-gray-800">
         <img class="p-5   h-96 md:h-auto md:w-1/2 " src={item.image} alt=""></img>
@@ -55,6 +57,7 @@ async function ArtPage ({params}) {
         </div>
     </div>
 </div>
+
    
     );
 }

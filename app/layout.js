@@ -2,6 +2,7 @@ import '@/css/globals.css'
 import { NavBar } from '@/components/navigation/NavBar'
 
 import Header from '@/components/header/header'
+import { Footer } from '@/components/footer/Footer'
  
 
  
@@ -13,10 +14,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <Header/>
-        <NavBar/>
-        {children}</body>
+      <body class="flex flex-col min-h-screen">
+  <div class="flex-grow">
+    <Header/>
+    <NavBar/>
+    {children}
+  </div>
+  <Footer />
+</body>
     </html>
   )
 }
