@@ -7,8 +7,6 @@ import { ArtCard } from '@/components/ui/ArtCard';
 import { PageHeader } from '@/components/header/PageHeader';
 
 
-
-
 async function EmployeesPage () {
     const payload = await getArt()
     const values = Object.values(payload)
