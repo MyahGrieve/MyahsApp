@@ -9,15 +9,15 @@ import {FaGithubAlt} from "react-icons/fa"
         <ul className="flex justify-center items-center gap-x-8">
         
             <li>
-               <Link className="" href="/">
+               <Link  href="/">
                Home
                   </Link>
                   </li>
-            <li><Link className="" href="/items/multiple-items">
+            <li><Link  href="/items/multiple-items">
                Art
             </Link>
            </li>
-           <li><Link className="" href="https://github.com/MyahGrieve/MyahsApp" target="_blank">
+           <li><Link  href="https://github.com/MyahGrieve/MyahsApp" target="_blank">
                <FaGithubAlt/>
             </Link>
            </li>

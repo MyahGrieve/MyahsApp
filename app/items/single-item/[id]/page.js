@@ -1,7 +1,7 @@
 import { getArt } from "@/lib/firebase/getArt";
 import { Button, Tooltip } from "@nextui-org/react";
 import {FaLeaf} from "react-icons/fa"
-import { Footer } from "@/components/footer/Footer";
+import { CheckoutForm } from "@/components/checkout/CheckoutForm";
 
 async function getSingleItem(id) {
     const payload = await getArt();
@@ -15,7 +15,7 @@ async function ArtPage ({params}) {
     const id = params.id
     const item = await getSingleItem(id)
 
-
+    console.log(item.price)
     
     return (
         
@@ -43,16 +43,18 @@ async function ArtPage ({params}) {
             
            </div>
             <p className="tracking-light font-semi-bold mb-3 text-xs">by <span className="font-semibold">{item.artist}</span></p>      
-            <p className="mb-1 text-xl font-bold">{item.price}</p>
+            <p className="mb-1 text-xl font-bold">{item.display_price}</p>
             <p className="mb-3 text-sm">{item.width}" X {item.height}"</p>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{item.description}</p>
             <p><span className="font-bold text-sm mb-1">Medium: </span>{item.medium}</p>
             <p><span className="font-bold text-sm">Subject: </span>{item.subject}</p>
             </div>
             {item.availability ? (
-            <Button radius="full" className="tracking-light bg-black text-white">Add to Cart</Button>
+              <CheckoutForm price_id={item.price_id}/>
+            
         ) : (
             <button className="disabled:opacity-50 cursor-not-allowed bg-gray-300 text-gray-600 rounded-full px-6 py-2">Sold Out!</button>
+            
         )}
         </div>
     </div>

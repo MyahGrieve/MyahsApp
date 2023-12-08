@@ -7,6 +7,7 @@ import Link from "next/link"
  
 const id = item.id
 
+
     return (
           
         <Card shadow="sm">

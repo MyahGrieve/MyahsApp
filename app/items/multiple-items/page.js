@@ -17,7 +17,6 @@ async function EmployeesPage () {
 
     return (
         <>
-        {/* <PageHeader title="All Employees Display"/> */}
         <main className='m-10'>
             <PageHeader title="Browse the Collection" />
         <div className="gap-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-10">
