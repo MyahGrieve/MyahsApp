@@ -3,7 +3,7 @@
   "-NipWEVktmgBk4BV5hHW": {
     "id": 1,
     "price_id": "price_1OIe3mKiTBbsCEtnhJyGRHJr",
-    "display_price": "$47.05",
+    "price": "$47.05",
     "title": "Floating Astronaut",
     "description": "est risus auctor sed tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl duis bibendum",
     "medium": "Photo",
@@ -18,7 +18,7 @@
   "-NipWEVnDzlLRxxbGvh0": {
     "id": 2,
     "price_id": "price_1OIe4fKiTBbsCEtnAIRFWHOU",
-    "display_price": "$176.77",
+    "price": "$176.77",
     "title": "Grogu",
     "description": "sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et",
     "medium": "Digital",
