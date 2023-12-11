@@ -43,7 +43,7 @@ async function ArtPage ({params}) {
             
            </div>
             <p className="tracking-light font-semi-bold mb-3 text-xs">by <span className="font-semibold">{item.artist}</span></p>      
-            <p className="mb-1 text-xl font-bold">{item.display_price}</p>
+            <p className="mb-1 text-xl font-bold">{item.price}</p>
             <p className="mb-3 text-sm">{item.width}" X {item.height}"</p>
             <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{item.description}</p>
             <p><span className="font-bold text-sm mb-1">Medium: </span>{item.medium}</p>
